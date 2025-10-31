@@ -24,6 +24,13 @@ module sui_mover_lesson_1::lesson_1 {
         }
     }
 
+    public fun test_leavel(a:u64,b:u64):u64{
+        a * b
+    }
+    
+
     #[test_only]
     public fun numbers(): vector<u64> { vector[1, 2, 3] }
+
+   
 }

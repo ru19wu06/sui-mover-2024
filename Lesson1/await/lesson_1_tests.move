@@ -11,6 +11,14 @@ module sui_mover_lesson_1::lesson_1_tests {
     }
 
     #[test]
+    fun test2(){
+        let my_number: u64 = 1; 
+        let my_number3: u64 = 99;
+        let mnu:u64 = my_number * my_number3;
+        debug::print(&mnu);
+    }
+
+    #[test]
     fun test_sum() {
         let sum_result = lesson_1::sum(1, 2);
         debug::print(&sum_result);
@@ -63,4 +71,6 @@ module sui_mover_lesson_1::lesson_1_tests {
         debug::print(&type_name::get<vector<u64>>());
         debug::print(&type_name::get<Option<u64>>());
     }
+
+    
 }
